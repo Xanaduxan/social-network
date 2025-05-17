@@ -4,13 +4,13 @@ import (
 	"context"
 	"fmt"
 
-	"gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/otel/tracer"
+	"github.com/okarpova/my-app/pkg/otel/tracer"
 
-	"gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/transaction"
+	"github.com/okarpova/my-app/pkg/transaction"
 
 	"github.com/google/uuid"
-	"gitlab.golang-school.ru/potok-1/okarpova/my-app/internal/domain"
-	"gitlab.golang-school.ru/potok-1/okarpova/my-app/internal/dto"
+	"github.com/okarpova/my-app/internal/domain"
+	"github.com/okarpova/my-app/internal/dto"
 )
 
 func (u *UseCase) UpdateProfile(ctx context.Context, input dto.UpdateProfileInput) error {

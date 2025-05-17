@@ -2,7 +2,7 @@
 
 package test
 
-import "gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/httpclient"
+import "github.com/okarpova/my-app/pkg/httpclient"
 
 type ProfileClient = httpclient.Client
 

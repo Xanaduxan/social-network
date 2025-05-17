@@ -7,7 +7,7 @@ import (
 
 	"github.com/rs/zerolog/log"
 
-	pb "gitlab.golang-school.ru/potok-1/okarpova/my-app/gen/grpc/profile_v1"
+	pb "github.com/okarpova/my-app/gen/grpc/profile_v1"
 
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"

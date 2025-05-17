@@ -3,9 +3,9 @@ package usecase
 import (
 	"context"
 
+	"github.com/okarpova/my-app/pkg/otel/tracer"
 	"github.com/rs/zerolog/log"
 	"github.com/segmentio/kafka-go"
-	"gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/otel/tracer"
 )
 
 func (u *UseCase) Consume(ctx context.Context, m kafka.Message) error {

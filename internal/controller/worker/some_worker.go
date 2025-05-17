@@ -4,13 +4,13 @@ import (
 	"context"
 	"fmt"
 
-	"gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/otel/tracer"
+	"github.com/okarpova/my-app/pkg/otel/tracer"
 	"go.opentelemetry.io/otel/trace"
 
 	"github.com/robfig/cron/v3"
 
+	"github.com/okarpova/my-app/internal/usecase"
 	"github.com/rs/zerolog/log"
-	"gitlab.golang-school.ru/potok-1/okarpova/my-app/internal/usecase"
 )
 
 type SomeWorker struct {

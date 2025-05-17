@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/grpcclient"
+	"github.com/okarpova/my-app/pkg/grpcclient"
 )
 
 func main() {

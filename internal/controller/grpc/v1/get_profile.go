@@ -6,9 +6,9 @@ import (
 
 	"google.golang.org/protobuf/types/known/timestamppb"
 
-	pb "gitlab.golang-school.ru/potok-1/okarpova/my-app/gen/grpc/profile_v1"
-	"gitlab.golang-school.ru/potok-1/okarpova/my-app/internal/domain"
-	"gitlab.golang-school.ru/potok-1/okarpova/my-app/internal/dto"
+	pb "github.com/okarpova/my-app/gen/grpc/profile_v1"
+	"github.com/okarpova/my-app/internal/domain"
+	"github.com/okarpova/my-app/internal/dto"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 )

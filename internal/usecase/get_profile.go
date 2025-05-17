@@ -4,11 +4,11 @@ import (
 	"context"
 	"fmt"
 
-	"gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/otel/tracer"
+	"github.com/okarpova/my-app/pkg/otel/tracer"
 
 	"github.com/google/uuid"
-	"gitlab.golang-school.ru/potok-1/okarpova/my-app/internal/domain"
-	"gitlab.golang-school.ru/potok-1/okarpova/my-app/internal/dto"
+	"github.com/okarpova/my-app/internal/domain"
+	"github.com/okarpova/my-app/internal/dto"
 )
 
 func (u *UseCase) GetProfile(ctx context.Context, input dto.GetProfileInput) (dto.GetProfileOutput, error) {

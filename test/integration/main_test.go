@@ -7,24 +7,24 @@ import (
 	"testing"
 	"time"
 
-	"gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/otel"
+	"github.com/okarpova/my-app/pkg/otel"
 
 	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/log"
 
+	"github.com/okarpova/my-app/config"
+	kafka_producer "github.com/okarpova/my-app/internal/adapter/kafka"
+	"github.com/okarpova/my-app/internal/app"
+	"github.com/okarpova/my-app/internal/controller/grpc"
+	"github.com/okarpova/my-app/internal/controller/kafka_consumer"
+	"github.com/okarpova/my-app/internal/controller/worker"
+	"github.com/okarpova/my-app/pkg/httpserver"
+	"github.com/okarpova/my-app/pkg/logger"
+	"github.com/okarpova/my-app/pkg/postgres"
+	"github.com/okarpova/my-app/pkg/redis"
 	"github.com/segmentio/kafka-go"
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
-	"gitlab.golang-school.ru/potok-1/okarpova/my-app/config"
-	kafka_producer "gitlab.golang-school.ru/potok-1/okarpova/my-app/internal/adapter/kafka"
-	"gitlab.golang-school.ru/potok-1/okarpova/my-app/internal/app"
-	"gitlab.golang-school.ru/potok-1/okarpova/my-app/internal/controller/grpc"
-	"gitlab.golang-school.ru/potok-1/okarpova/my-app/internal/controller/kafka_consumer"
-	"gitlab.golang-school.ru/potok-1/okarpova/my-app/internal/controller/worker"
-	"gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/httpserver"
-	"gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/logger"
-	"gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/postgres"
-	"gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/redis"
 )
 
 // Prepare:  make up

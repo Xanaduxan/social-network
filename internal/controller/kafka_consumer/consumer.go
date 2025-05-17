@@ -6,14 +6,14 @@ import (
 	"io"
 	"time"
 
-	"gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/otel"
+	"github.com/okarpova/my-app/pkg/otel"
 
+	"github.com/okarpova/my-app/internal/usecase"
+	"github.com/okarpova/my-app/pkg/logger"
+	"github.com/okarpova/my-app/pkg/metrics"
+	"github.com/okarpova/my-app/pkg/otel/tracer"
 	"github.com/rs/zerolog/log"
 	"github.com/segmentio/kafka-go"
-	"gitlab.golang-school.ru/potok-1/okarpova/my-app/internal/usecase"
-	"gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/logger"
-	"gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/metrics"
-	"gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/otel/tracer"
 	semconv "go.opentelemetry.io/otel/semconv/v1.30.0"
 	"go.opentelemetry.io/otel/trace"
 )

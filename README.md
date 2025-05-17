@@ -4,7 +4,6 @@
 Это заготовка для социальной сети, включающая:
 ✅ Ленту постов (Post Service)
 ✅ Друзья/подписки (User Graph Service)
-✅ Чат и уведомления (Notification Service)
 ✅ Аналитика активности (Analytics Service)
 
 Технологии:

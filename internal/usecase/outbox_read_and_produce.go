@@ -4,11 +4,11 @@ import (
 	"context"
 	"fmt"
 
-	"gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/otel/tracer"
+	"github.com/okarpova/my-app/pkg/otel/tracer"
 
 	"github.com/rs/zerolog/log"
 
-	"gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/transaction"
+	"github.com/okarpova/my-app/pkg/transaction"
 )
 
 func (u *UseCase) OutboxReadAndProduce(ctx context.Context, limit int) (lenMessages int, err error) {

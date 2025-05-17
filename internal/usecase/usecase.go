@@ -7,9 +7,9 @@ import (
 
 	"github.com/google/uuid"
 
-	"gitlab.golang-school.ru/potok-1/okarpova/my-app/internal/domain"
-	"gitlab.golang-school.ru/potok-1/okarpova/my-app/internal/dto"
-	"gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/httpclient"
+	"github.com/okarpova/my-app/internal/domain"
+	"github.com/okarpova/my-app/internal/dto"
+	"github.com/okarpova/my-app/pkg/httpclient"
 )
 
 type Redis interface {
@@ -37,6 +37,8 @@ type Postgres interface {
 
 	ReadOutboxKafka(ctx context.Context, limit int) ([]kafka.Message, error)
 	SaveOutboxKafka(ctx context.Context, msgs ...kafka.Message) error
+
+	CreatePost(ctx context.Context, post domain.Post) error
 }
 
 type UseCase struct {

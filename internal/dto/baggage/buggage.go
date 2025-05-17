@@ -26,3 +26,16 @@ func PutProfileID(ctx context.Context, profileID string) {
 		b.ProfileID = profileID
 	}
 }
+
+type postIDKey struct{}
+
+func PutPostID(ctx context.Context, postID string) context.Context {
+	return context.WithValue(ctx, postIDKey{}, postID)
+}
+
+func GetPostID(ctx context.Context) string {
+	if id, ok := ctx.Value(postIDKey{}).(string); ok {
+		return id
+	}
+	return ""
+}

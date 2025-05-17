@@ -6,13 +6,13 @@ import (
 	"hash/fnv"
 	"time"
 
-	"gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/otel"
+	"github.com/okarpova/my-app/pkg/otel"
 
+	"github.com/okarpova/my-app/pkg/logger"
+	"github.com/okarpova/my-app/pkg/metrics"
+	"github.com/okarpova/my-app/pkg/otel/tracer"
 	"github.com/rs/zerolog/log"
 	"github.com/segmentio/kafka-go"
-	"gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/logger"
-	"gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/metrics"
-	"gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/otel/tracer"
 	"go.opentelemetry.io/otel/trace"
 )
 
