@@ -3,8 +3,8 @@ package v1
 import (
 	"context"
 
-	pb "gitlab.golang-school.ru/potok-1/okarpova/my-app/gen/grpc/profile_v1"
-	"gitlab.golang-school.ru/potok-1/okarpova/my-app/internal/dto"
+	pb "github.com/okarpova/my-app/gen/grpc/profile_v1"
+	"github.com/okarpova/my-app/internal/dto"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 )

@@ -3,7 +3,7 @@ package otel
 import (
 	"context"
 
-	"gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/otel/tracer"
+	"github.com/okarpova/my-app/pkg/otel/tracer"
 	"go.opentelemetry.io/otel/attribute"
 	"go.opentelemetry.io/otel/codes"
 	semconv "go.opentelemetry.io/otel/semconv/v1.30.0"

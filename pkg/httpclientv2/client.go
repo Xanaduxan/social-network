@@ -4,7 +4,7 @@ import (
 	"errors"
 	"fmt"
 
-	http_client "gitlab.golang-school.ru/potok-1/okarpova/my-app/gen/http/profile_v2/client"
+	http_client "github.com/okarpova/my-app/gen/http/profile_v2/client"
 )
 
 var ErrNotFound = errors.New("not found")

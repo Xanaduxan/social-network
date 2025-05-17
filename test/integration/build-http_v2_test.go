@@ -3,7 +3,7 @@
 package test
 
 import (
-	"gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/httpclientv2"
+	"github.com/okarpova/my-app/pkg/httpclientv2"
 )
 
 type ProfileClient = httpclientv2.Client

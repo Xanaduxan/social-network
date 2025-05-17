@@ -5,12 +5,12 @@ import (
 	"errors"
 	"fmt"
 
-	"gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/otel/tracer"
+	"github.com/okarpova/my-app/pkg/otel/tracer"
 
 	"github.com/google/uuid"
 	"github.com/jackc/pgx/v5"
-	"gitlab.golang-school.ru/potok-1/okarpova/my-app/internal/domain"
-	"gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/transaction"
+	"github.com/okarpova/my-app/internal/domain"
+	"github.com/okarpova/my-app/pkg/transaction"
 )
 
 func (p *Postgres) DeleteProfile(ctx context.Context, id uuid.UUID) error {

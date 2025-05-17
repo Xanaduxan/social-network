@@ -4,9 +4,10 @@ import (
 	"context"
 	"errors"
 	"fmt"
+
 	"github.com/jackc/pgx/v5/pgconn"
+	"github.com/okarpova/my-app/pkg/postgres"
 	"github.com/rs/zerolog/log"
-	"gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/postgres"
 
 	"github.com/jackc/pgx/v5"
 	"github.com/jackc/pgx/v5/pgxpool"
