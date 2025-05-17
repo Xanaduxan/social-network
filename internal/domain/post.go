@@ -64,3 +64,16 @@ func isValidVisibility(v string) bool {
 		return false
 	}
 }
+
+type GetPostsInput struct {
+	AuthorID uuid.UUID `json:"-"`
+	Sort     string    `json:"-"`
+	Order    string    `json:"-"`
+	Offset   int       `json:"-"`
+	Limit    int       `json:"-"`
+}
+
+type GetPostsOutput struct {
+	Posts []Post `json:"posts"`
+	Total int    `json:"total,omitempty"`
+}

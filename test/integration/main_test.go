@@ -120,8 +120,6 @@ func (s *Suite) SetupSuite() {
 		s.NoError(err)
 	}()
 
-	BuildProfile(s)
-
 	time.Sleep(time.Second)
 }
 

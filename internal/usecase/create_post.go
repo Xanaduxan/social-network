@@ -37,10 +37,6 @@ func (u *UseCase) CreatePost(ctx context.Context, input dto.CreatePostInput) (dt
 		return output, fmt.Errorf("u.postgres.CreatePost: %w", err)
 	}
 
-	if err != nil {
-		return output, fmt.Errorf("u.postgres.CreatePostStats: %w", err)
-	}
-
 	err = transaction.Commit(ctx)
 	if err != nil {
 		return output, fmt.Errorf("transaction.Commit: %w", err)

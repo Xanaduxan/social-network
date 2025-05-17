@@ -39,6 +39,7 @@ type Postgres interface {
 	SaveOutboxKafka(ctx context.Context, msgs ...kafka.Message) error
 
 	CreatePost(ctx context.Context, post domain.Post) error
+	GetPosts(ctx context.Context, input dto.GetPostsInput) ([]domain.Post, error)
 }
 
 type UseCase struct {
