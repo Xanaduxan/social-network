@@ -1,4 +1,4 @@
-module github.com/okarpova/my-app
+module gitlab.golang-school.ru/potok-1/okarpova/my-app
 
 go 1.23.3
 

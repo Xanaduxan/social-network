@@ -3,7 +3,7 @@ package redis
 import (
 	"time"
 
-	"github.com/okarpova/my-app/pkg/redis"
+	"gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/redis"
 )
 
 const (

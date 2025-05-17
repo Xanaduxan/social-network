@@ -3,8 +3,8 @@ package otel
 import (
 	"net/http"
 
-	"github.com/okarpova/my-app/pkg/otel/tracer"
-	"github.com/okarpova/my-app/pkg/router"
+	"gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/otel/tracer"
+	"gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/router"
 	"go.opentelemetry.io/otel"
 	"go.opentelemetry.io/otel/attribute"
 	"go.opentelemetry.io/otel/codes"

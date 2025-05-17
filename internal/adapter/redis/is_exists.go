@@ -4,7 +4,7 @@ import (
 	"context"
 	"errors"
 
-	"github.com/okarpova/my-app/pkg/otel/tracer"
+	"gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/otel/tracer"
 
 	"github.com/redis/go-redis/v9"
 	"github.com/rs/zerolog/log"

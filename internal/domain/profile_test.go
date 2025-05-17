@@ -1,10 +1,9 @@
 package domain_test
 
 import (
-	"testing"
-
-	"github.com/okarpova/my-app/internal/domain"
 	"github.com/stretchr/testify/require"
+	"gitlab.golang-school.ru/potok-1/okarpova/my-app/internal/domain"
+	"testing"
 )
 
 func TestNewProfile(t *testing.T) {

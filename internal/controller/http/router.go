@@ -1,16 +1,16 @@
 package http
 
 import (
-	"github.com/okarpova/my-app/pkg/metrics"
-	"github.com/okarpova/my-app/pkg/otel"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
+	"gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/metrics"
+	"gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/otel"
 
 	"github.com/go-chi/chi/v5"
 
-	ver1 "github.com/okarpova/my-app/internal/controller/http/v1"
+	ver1 "gitlab.golang-school.ru/potok-1/okarpova/my-app/internal/controller/http/v1"
 
-	"github.com/okarpova/my-app/internal/usecase"
-	"github.com/okarpova/my-app/pkg/logger"
+	"gitlab.golang-school.ru/potok-1/okarpova/my-app/internal/usecase"
+	"gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/logger"
 )
 
 func ProfileRouter(r *chi.Mux, uc *usecase.UseCase, m *metrics.HTTPServer) {

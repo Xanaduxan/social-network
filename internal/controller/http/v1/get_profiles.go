@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/okarpova/my-app/internal/domain"
-	"github.com/okarpova/my-app/internal/dto"
-	"github.com/okarpova/my-app/pkg/render"
+	"gitlab.golang-school.ru/potok-1/okarpova/my-app/internal/domain"
+	"gitlab.golang-school.ru/potok-1/okarpova/my-app/internal/dto"
+	"gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/render"
 )
 
 func (h *Handlers) GetProfiles(w http.ResponseWriter, r *http.Request) {

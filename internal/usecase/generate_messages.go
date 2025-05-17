@@ -4,13 +4,13 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/okarpova/my-app/pkg/otel"
+	"gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/otel"
 
 	"github.com/segmentio/kafka-go"
 
-	"github.com/okarpova/my-app/pkg/otel/tracer"
+	"gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/otel/tracer"
 
-	"github.com/okarpova/my-app/pkg/transaction"
+	"gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/transaction"
 
 	"github.com/google/uuid"
 )

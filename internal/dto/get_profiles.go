@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/go-playground/validator/v10"
-	"github.com/okarpova/my-app/internal/domain"
+	"gitlab.golang-school.ru/potok-1/okarpova/my-app/internal/domain"
 )
 
 type GetProfilesOutput struct {

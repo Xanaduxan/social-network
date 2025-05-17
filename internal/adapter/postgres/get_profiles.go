@@ -5,12 +5,12 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/okarpova/my-app/pkg/otel/tracer"
+	"gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/otel/tracer"
 
 	"github.com/jackc/pgx/v5/pgtype"
-	"github.com/okarpova/my-app/internal/domain"
-	"github.com/okarpova/my-app/internal/dto"
-	"github.com/okarpova/my-app/pkg/transaction"
+	"gitlab.golang-school.ru/potok-1/okarpova/my-app/internal/domain"
+	"gitlab.golang-school.ru/potok-1/okarpova/my-app/internal/dto"
+	"gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/transaction"
 )
 
 type GetProfilesDTO struct {

@@ -4,16 +4,16 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/okarpova/my-app/pkg/otel"
+	"gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/otel"
 
-	"github.com/okarpova/my-app/pkg/logger"
+	"gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/logger"
 
 	"google.golang.org/grpc/reflection"
 
-	pb "github.com/okarpova/my-app/gen/grpc/profile_v1"
-	ver1 "github.com/okarpova/my-app/internal/controller/grpc/v1"
-	"github.com/okarpova/my-app/internal/usecase"
 	"github.com/rs/zerolog/log"
+	pb "gitlab.golang-school.ru/potok-1/okarpova/my-app/gen/grpc/profile_v1"
+	ver1 "gitlab.golang-school.ru/potok-1/okarpova/my-app/internal/controller/grpc/v1"
+	"gitlab.golang-school.ru/potok-1/okarpova/my-app/internal/usecase"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 )

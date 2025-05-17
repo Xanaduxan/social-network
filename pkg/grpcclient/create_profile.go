@@ -5,7 +5,7 @@ import (
 	"fmt"
 
 	"github.com/google/uuid"
-	pb "github.com/okarpova/my-app/gen/grpc/profile_v1"
+	pb "gitlab.golang-school.ru/potok-1/okarpova/my-app/gen/grpc/profile_v1"
 )
 
 func (c *Client) Create(name string, age int, email, phone string) (uuid.UUID, error) {

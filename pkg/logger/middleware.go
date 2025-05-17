@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/okarpova/my-app/pkg/router"
+	"gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/router"
 
-	"github.com/okarpova/my-app/internal/dto/baggage"
 	"github.com/rs/zerolog/log"
+	"gitlab.golang-school.ru/potok-1/okarpova/my-app/internal/dto/baggage"
 )
 
 func Middleware(next http.Handler) http.Handler {

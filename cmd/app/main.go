@@ -3,12 +3,12 @@ package main
 import (
 	"context"
 
-	"github.com/okarpova/my-app/pkg/otel"
+	"gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/otel"
 
-	"github.com/okarpova/my-app/config"
-	"github.com/okarpova/my-app/internal/app"
-	"github.com/okarpova/my-app/pkg/logger"
 	"github.com/rs/zerolog/log"
+	"gitlab.golang-school.ru/potok-1/okarpova/my-app/config"
+	"gitlab.golang-school.ru/potok-1/okarpova/my-app/internal/app"
+	"gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/logger"
 	_ "go.uber.org/automaxprocs"
 )
 

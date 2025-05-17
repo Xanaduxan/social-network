@@ -3,21 +3,21 @@ package config
 import (
 	"fmt"
 
-	"github.com/okarpova/my-app/pkg/otel"
+	"gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/otel"
 
-	"github.com/okarpova/my-app/internal/adapter/kafka"
-	"github.com/okarpova/my-app/internal/controller/kafka_consumer"
+	"gitlab.golang-school.ru/potok-1/okarpova/my-app/internal/adapter/kafka"
+	"gitlab.golang-school.ru/potok-1/okarpova/my-app/internal/controller/kafka_consumer"
 
-	"github.com/okarpova/my-app/internal/controller/worker"
+	"gitlab.golang-school.ru/potok-1/okarpova/my-app/internal/controller/worker"
 
 	"github.com/joho/godotenv"
 	"github.com/kelseyhightower/envconfig"
-	"github.com/okarpova/my-app/internal/controller/grpc"
-	"github.com/okarpova/my-app/pkg/httpclient"
-	"github.com/okarpova/my-app/pkg/httpserver"
-	"github.com/okarpova/my-app/pkg/logger"
-	"github.com/okarpova/my-app/pkg/postgres"
-	"github.com/okarpova/my-app/pkg/redis"
+	"gitlab.golang-school.ru/potok-1/okarpova/my-app/internal/controller/grpc"
+	"gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/httpclient"
+	"gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/httpserver"
+	"gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/logger"
+	"gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/postgres"
+	"gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/redis"
 )
 
 type App struct {

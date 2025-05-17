@@ -6,11 +6,11 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/okarpova/my-app/pkg/otel/tracer"
+	"gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/otel/tracer"
 
 	"github.com/jackc/pgx/v5"
-	"github.com/okarpova/my-app/internal/domain"
-	"github.com/okarpova/my-app/pkg/transaction"
+	"gitlab.golang-school.ru/potok-1/okarpova/my-app/internal/domain"
+	"gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/transaction"
 )
 
 func (p *Postgres) UpdateProfile(ctx context.Context, profile domain.Profile) error {

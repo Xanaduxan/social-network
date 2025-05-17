@@ -6,7 +6,7 @@ import (
 	"net/http"
 
 	"github.com/google/uuid"
-	http_client "github.com/okarpova/my-app/gen/http/profile_v2/client"
+	http_client "gitlab.golang-school.ru/potok-1/okarpova/my-app/gen/http/profile_v2/client"
 )
 
 func (c *Client) Update(id string, name *string, age *int, email, phone *string) error {

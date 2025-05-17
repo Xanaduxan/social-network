@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/okarpova/my-app/pkg/otel/tracer"
 	"github.com/rs/zerolog/log"
+	"gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/otel/tracer"
 	"go.opentelemetry.io/otel"
 	"go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc"
 	"go.opentelemetry.io/otel/propagation"

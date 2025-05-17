@@ -7,8 +7,8 @@ import (
 	"fmt"
 
 	"github.com/google/uuid"
-	"github.com/okarpova/my-app/internal/domain"
 	"github.com/redis/go-redis/v9"
+	"gitlab.golang-school.ru/potok-1/okarpova/my-app/internal/domain"
 )
 
 func (r *Repository) getCache(ctx context.Context, id uuid.UUID) (domain.Profile, error) {

@@ -5,8 +5,8 @@ import (
 
 	"google.golang.org/grpc/status"
 
-	"github.com/okarpova/my-app/internal/dto/baggage"
 	"github.com/rs/zerolog/log"
+	"gitlab.golang-school.ru/potok-1/okarpova/my-app/internal/dto/baggage"
 	"google.golang.org/grpc"
 )
 

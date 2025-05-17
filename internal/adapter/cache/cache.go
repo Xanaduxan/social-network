@@ -4,7 +4,7 @@ import (
 	"sync"
 
 	"github.com/google/uuid"
-	"github.com/okarpova/my-app/internal/domain"
+	"gitlab.golang-school.ru/potok-1/okarpova/my-app/internal/domain"
 )
 
 type Cache struct {

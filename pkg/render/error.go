@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/okarpova/my-app/internal/dto/baggage"
+	"gitlab.golang-school.ru/potok-1/okarpova/my-app/internal/dto/baggage"
 )
 
 type Err struct {

@@ -3,7 +3,7 @@
 package test
 
 import (
-	"github.com/okarpova/my-app/pkg/grpcclient"
+	"gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/grpcclient"
 )
 
 type ProfileClient = grpcclient.Client

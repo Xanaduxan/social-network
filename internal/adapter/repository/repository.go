@@ -1,10 +1,9 @@
 package repository
 
 import (
+	"gitlab.golang-school.ru/potok-1/okarpova/my-app/internal/adapter/postgres"
+	"gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/redis"
 	"time"
-
-	"github.com/okarpova/my-app/internal/adapter/postgres"
-	"github.com/okarpova/my-app/pkg/redis"
 )
 
 const (

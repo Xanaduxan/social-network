@@ -4,9 +4,9 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/okarpova/my-app/pkg/httpclient"
+	"gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/httpclient"
 
-	pb "github.com/okarpova/my-app/gen/grpc/profile_v1"
+	pb "gitlab.golang-school.ru/potok-1/okarpova/my-app/gen/grpc/profile_v1"
 )
 
 type Profile httpclient.Profile

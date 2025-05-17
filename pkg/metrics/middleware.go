@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/okarpova/my-app/pkg/router"
+	"gitlab.golang-school.ru/potok-1/okarpova/my-app/pkg/router"
 )
 
 func NewMiddleware(metrics *HTTPServer) func(next http.Handler) http.Handler {
